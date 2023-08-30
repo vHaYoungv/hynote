@@ -22,12 +22,24 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링 부트 버전에 맞춰 JPA 라이브러리들의 버전을 관리 해줌
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'junit:junit:4.13.1'
+	implementation 'junit:junit:4.13.1'
+
+	implementation 'org.springframework.boot:spring-boot-starter-mustache'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	runtimeOnly 'com.h2database:h2' //앱을 재시작할대마다 초기화 된다는 점을 이용해, 테스트 용도로 많이 사용 됨
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
