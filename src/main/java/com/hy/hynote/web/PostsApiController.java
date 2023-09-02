@@ -3,6 +3,7 @@ package com.hy.hynote.web;
 import com.hy.hynote.service.posts.PostsService;
 import com.hy.hynote.web.dto.PostsResponseDto;
 import com.hy.hynote.web.dto.PostsSaveRequestDto;
+import com.hy.hynote.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
