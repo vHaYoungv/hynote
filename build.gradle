@@ -28,7 +28,6 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
     implementation 'junit:junit:4.13.1'
-	implementation 'junit:junit:4.13.1'
 
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
@@ -38,6 +37,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	runtimeOnly 'com.h2database:h2' //앱을 재시작할대마다 초기화 된다는 점을 이용해, 테스트 용도로 많이 사용 됨
+
 }
 
 
